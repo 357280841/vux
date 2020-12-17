@@ -1,40 +1,38 @@
 {
-  "name": "vux",
-  "version": "2.9.4",
-  "main": "index.js",
-  "description": "Mobile web UI based on Vue and WeUI",
-  "keywords": [
-    "vux",
-    "vue",
-    "vue ui",
-    "weui",
-    "vue-components",
-    "web-components",
-    "component",
-    "components",
-    "mobile ui",
-    "framework",
-    "frontend"
+  "_args": [
+    [
+      "vux@2.9.4",
+      "/Users/sola/work/code/aoyou/ausWeChatH5"
+    ]
   ],
-  "author": "airyland <airyland@qq.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/airyland/vux"
+  "_from": "vux@2.9.4",
+  "_id": "vux@2.9.4",
+  "_inBundle": false,
+  "_integrity": "sha1-OWTfTwrFSz+/bMm+sHLkTc4Ar6o=",
+  "_location": "/vux",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "vux@2.9.4",
+    "name": "vux",
+    "escapedName": "vux",
+    "rawSpec": "2.9.4",
+    "saveSpec": null,
+    "fetchSpec": "2.9.4"
   },
-  "license": "MIT",
-  "scripts": {
-    "dev": "webpack-dev-server --host 0.0.0.0 --inline --progress --config build/webpack.dev.conf.js",
-    "build": "node build/build.js && rimraf docs/demos/v2/ && mkdirp docs/demos/v2 && cp -r docs/demos/temp/* docs/demos/v2/",
-    "build:cdn": "node build/build.js --cdn && rimraf docs/demos/v2/ && mkdirp docs/demos/v2 && cp -rf docs/demos/temp/* docs/demos/v2/",
-    "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
-    "test": "npm run unit",
-    "lint": "eslint --ext .js,.vue src test/unit/specs",
-    "doc:build": "node build/build-docs.js && node docs/component-contributors && node docs/compile",
-    "doc:dev": "cd docs && npm run dev",
-    "build-main": "node build/build-main.js",
-    "build-components": "node build/build-components.js",
-    "build-styles": "node build/build-styles.js",
-    "xbuild": "npm run build-styles && npm run build-components"
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/vux/download/vux-2.9.4.tgz",
+  "_spec": "2.9.4",
+  "_where": "/Users/sola/work/code/aoyou/ausWeChatH5",
+  "author": {
+    "name": "airyland",
+    "email": "airyland@qq.com"
+  },
+  "bugs": {
+    "url": "https://github.com/airyland/vux/issues"
   },
   "dependencies": {
     "@antv/f2": "^3.1.4-beta.2",
@@ -59,6 +57,7 @@
     "vux-xscroll": "^3.1.10",
     "x-photoswipe": "^4.1.3-rc.1"
   },
+  "description": "Mobile web UI based on Vue and WeUI",
   "devDependencies": {
     "autoprefixer": "^6.7.2",
     "autosize": "^3.0.20",
@@ -78,7 +77,6 @@
     "connect-history-api-fallback": "^1.3.0",
     "cross-env": "^3.1.4",
     "css-loader": "^0.26.1",
-    "dayjs": "^1.8.16",
     "docute-cli": "^0.4.0",
     "eslint": "^3.14.1",
     "eslint-config-standard": "^6.2.1",
@@ -157,5 +155,41 @@
   "engines": {
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
-  }
+  },
+  "homepage": "https://github.com/airyland/vux#readme",
+  "keywords": [
+    "vux",
+    "vue",
+    "vue ui",
+    "weui",
+    "vue-components",
+    "web-components",
+    "component",
+    "components",
+    "mobile ui",
+    "framework",
+    "frontend"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "vux",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airyland/vux.git"
+  },
+  "scripts": {
+    "build": "node build/build.js && rimraf docs/demos/v2/ && mkdirp docs/demos/v2 && cp -r docs/demos/temp/* docs/demos/v2/",
+    "build-components": "node build/build-components.js",
+    "build-main": "node build/build-main.js",
+    "build-styles": "node build/build-styles.js",
+    "build:cdn": "node build/build.js --cdn && rimraf docs/demos/v2/ && mkdirp docs/demos/v2 && cp -rf docs/demos/temp/* docs/demos/v2/",
+    "dev": "webpack-dev-server --host 0.0.0.0 --inline --progress --config build/webpack.dev.conf.js",
+    "doc:build": "node build/build-docs.js && node docs/component-contributors && node docs/compile",
+    "doc:dev": "cd docs && npm run dev",
+    "lint": "eslint --ext .js,.vue src test/unit/specs",
+    "test": "npm run unit",
+    "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
+    "xbuild": "npm run build-styles && npm run build-components"
+  },
+  "version": "2.9.4"
 }

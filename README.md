@@ -67,19 +67,7 @@
   </a>
 </p>
 
-<p align="center">
-  <a href="https://www.upyun.com/">
-    <img src="https://ww1.sinaimg.cn/large/663d3650gy1fs3l83hokej20b4040weg.jpg" height="80">
-  </a>
-</p>
-
-## 我们的产品
-
-<p align="center">
-  <a href="https://wereader.app?utm_source=vux-github">
-    <img src="https://i.loli.net/2019/12/30/SM4y7mfunjvhWEc.png" width="125">
-  </a>
-</p>
+## WeApp Studio 其他产品
 
 <p align="center">
   <a href="https://werss.app?utm_source=vux-github">

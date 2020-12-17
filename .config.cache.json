@@ -1,0 +1,42 @@
+{
+  "plugins": [
+    {
+      "name": "vux-ui"
+    },
+    {
+      "name": "progress-bar"
+    },
+    {
+      "name": "duplicate-style"
+    },
+    {
+      "name": "less-theme",
+      "path": "src/style/theme.less"
+    }
+  ],
+  "options": {
+    "buildEnvs": [
+      "production"
+    ],
+    "ssr": false,
+    "projectRoot": "/Users/sola/work/code/aoyou/ausWeChatH5",
+    "vueVersion": "2.6.12",
+    "vueLoaderVersion": "15.9.3",
+    "useVuxUI": true
+  },
+  "allPlugins": [
+    {
+      "name": "vux-ui"
+    },
+    {
+      "name": "progress-bar"
+    },
+    {
+      "name": "duplicate-style"
+    },
+    {
+      "name": "less-theme",
+      "path": "src/style/theme.less"
+    }
+  ]
+}
