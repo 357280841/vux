@@ -358,8 +358,10 @@ export default {
       this.$refs.input.blur()
     },
     focusHandler ($event) {
-      this.$emit('on-focus', this.currentValue, $event)
-      this.isFocus = true
+      setTimeout(()=>{
+        this.$emit('on-focus', this.currentValue, $event)
+        this.isFocus = true
+      },0)
       // this.scrollIntoView(500)
       // this.scrollIntoView(5000)
       setTimeout(() => {
@@ -370,10 +372,12 @@ export default {
       // $event.target.
     },
     onBlur ($event) {
-      this.setTouched()
-      this.validate()
-      this.isFocus = false
-      this.$emit('on-blur', this.currentValue, $event)
+      setTimeout(()=>{
+        this.setTouched()
+        this.validate()
+        this.isFocus = false
+        this.$emit('on-blur', this.currentValue, $event)
+      },0)
     },
     onKeyUp (e) {
       if (e.key === 'Enter') {
